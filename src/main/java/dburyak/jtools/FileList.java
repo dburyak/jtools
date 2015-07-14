@@ -1,4 +1,4 @@
-package dburyak.apptools;
+package dburyak.jtools;
 
 
 import java.io.IOException;
@@ -98,7 +98,7 @@ public class FileList implements Iterable<Path> {
         }
 
         /**
-         * Constructor for class : [jtools] dburyak.apptools.MatchFileVisitor.<br/>
+         * Constructor for class : [jtools] dburyak.jtools.MatchFileVisitor.<br/>
          * Constructs new matching file visitor based on regex-pattern. <br/>
          * <b>Created on:</b> <i>5:01:52 PM Nov 28, 2014</i>
          * 
@@ -272,7 +272,7 @@ public class FileList implements Iterable<Path> {
     }
 
     /**
-     * Constructor for class : [jtools] dburyak.apptools.FileList.<br/>
+     * Constructor for class : [jtools] dburyak.jtools.FileList.<br/>
      * <br/>
      * <b>Created on:</b> <i>4:50:44 PM Dec 2, 2014</i>
      * 
@@ -289,7 +289,7 @@ public class FileList implements Iterable<Path> {
     }
 
     /**
-     * Constructor for class : [jtools] dburyak.apptools.FileList.<br/>
+     * Constructor for class : [jtools] dburyak.jtools.FileList.<br/>
      * <br/>
      * <b>Created on:</b> <i>6:21:03 PM Dec 2, 2014</i>
      * 
@@ -312,7 +312,7 @@ public class FileList implements Iterable<Path> {
     }
 
     /**
-     * Constructor for class : [jtools] dburyak.apptools.FileList.<br/>
+     * Constructor for class : [jtools] dburyak.jtools.FileList.<br/>
      * <br/>
      * <b>Created on:</b> <i>6:25:39 PM Dec 2, 2014</i>
      * 
@@ -335,7 +335,7 @@ public class FileList implements Iterable<Path> {
     }
 
     /**
-     * Constructor for class : [jtools] dburyak.apptools.FileList.<br/>
+     * Constructor for class : [jtools] dburyak.jtools.FileList.<br/>
      * Creates a new file-list which contains paths from given collection. This file list can be later modified. <br/>
      * <b>Created on:</b> <i>12:04:29 PM Dec 15, 2014</i>
      * 
@@ -353,7 +353,7 @@ public class FileList implements Iterable<Path> {
     }
 
     /**
-     * Constructor for class : [jtools] dburyak.apptools.FileList.<br/>
+     * Constructor for class : [jtools] dburyak.jtools.FileList.<br/>
      * Creates an empty file-list which can be later modified. <br/>
      * <b>Created on:</b> <i>12:04:25 PM Dec 15, 2014</i>
      */

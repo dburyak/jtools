@@ -1,4 +1,4 @@
-package dburyak.apptools;
+package dburyak.jtools;
 
 
 import java.io.BufferedReader;
@@ -323,7 +323,7 @@ public final class PropertiesMngr {
     }
     
     /**
-     * Constructor for class : [jtools] dburyak.apptools.PropertiesMngr.<br/>
+     * Constructor for class : [jtools] dburyak.jtools.PropertiesMngr.<br/>
      * Made private for controlling instance creation (singleton). <br/>
      * Will never be invoked concurrently because is used only in {@link InstanceHolder} and only once. So it's OK to
      * acquire write lock for simplicity.<br/>

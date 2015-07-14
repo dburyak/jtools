@@ -1,4 +1,4 @@
-package dburyak.apptools;
+package dburyak.jtools;
 
 
 /**

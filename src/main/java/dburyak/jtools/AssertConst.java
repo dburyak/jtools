@@ -1,4 +1,4 @@
-package dburyak.apptools;
+package dburyak.jtools;
 
 
 /**
@@ -56,7 +56,7 @@ public enum AssertConst {
     
     
     /**
-     * Constructor for class : [jtools] dburyak.apptools.AssertConst.<br/>
+     * Constructor for class : [jtools] dburyak.jtools.AssertConst.<br/>
      * <br/>
      * <b>Created on:</b> <i>1:28:58 AM Nov 22, 2014</i>
      * 
