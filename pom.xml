@@ -7,14 +7,16 @@
 	<packaging>jar</packaging>
 	<name>Java applications development tools</name>
 	<description>Common tools for java application development</description>
+	<url>https://github.com/dburyak/${project.artifactId}</url>
 	<organization>
 		<name>Dmytro Buryak</name>
 		<url>dmytro.buryak@gmail.com</url>
 	</organization>
 	<scm>
-		<connection>scm:hg:${basedir}</connection>
-		<developerConnection>scm:hg:${basedir}</developerConnection>
-		<tag>tip</tag>
+		<connection>scm:git:${project.url}</connection>
+		<developerConnection>scm:git:${project.url}</developerConnection>
+		<url>${project.url}</url>
+		<tag>HEAD</tag>
 	</scm>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
