@@ -1,6 +1,10 @@
 package dburyak.jtools;
 
 
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+
 /**
  * Project : jtools.<br/>
  * Utility class.<br/>
@@ -11,7 +15,7 @@ package dburyak.jtools;
  * @version 0.2
  */
 public final class Validators {
-    
+
     /**
      * Constructor for class : [jtools] dburyak.jtools.Validators.<br/>
      * Constructor is private to prevent instantiation of this utility class. <br/>
@@ -23,7 +27,7 @@ public final class Validators {
     private Validators() {
         throw new AssertionError("Utility class, not supposed to be instantiated"); //$NON-NLS-1$
     }
-    
+
     /**
      * Validates that argument is not null. <br/>
      * <b>PRE-conditions:</b> NONE <br/>
@@ -43,7 +47,7 @@ public final class Validators {
         }
         return true;
     }
-    
+
     /**
      * Validates that string is not empty. Null string is treated as empty. <br/>
      * <b>PRE-conditions:</b> NONE <br/>
@@ -63,5 +67,25 @@ public final class Validators {
         }
         return true;
     }
-    
+
+    /**
+     * Validates that given path exists.
+     * <br/><b>PRE-conditions:</b> NONE
+     * <br/><b>POST-conditions:</b> NONE
+     * <br/><b>Side-effects:</b> NONE
+     * <br/><b>Created on:</b> <i>4:57:37 AM Aug 20, 2015</i>
+     * 
+     * @param filePath
+     *            path to be validated
+     * @return true if given path exists
+     * @throws IllegalArgumentException
+     *             if given file doesn't exist
+     */
+    public static final boolean exists(final Path filePath) {
+        if ((filePath == null) || Files.exists(filePath)) {
+            throw new IllegalArgumentException();
+        }
+        return true;
+    }
+
 }
