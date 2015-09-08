@@ -3,6 +3,7 @@ package dburyak.jtools;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.time.Duration;
 
 
 /**
@@ -83,6 +84,23 @@ public final class Validators {
      */
     public static final boolean exists(final Path filePath) {
         if ((filePath == null) || Files.exists(filePath)) {
+            throw new IllegalArgumentException();
+        }
+        return true;
+    }
+
+    /**
+     * Validates that given duration is positive (non-zero and non-negative).
+     * <br/><b>PRE-conditions:</b> non-null arg
+     * <br/><b>POST-conditions:</b> NONE
+     * <br/><b>Side-effects:</b> NONE
+     * <br/><b>Created on:</b> <i>5:09:17 AM Aug 22, 2015</i>
+     * 
+     * @param duration
+     * @return
+     */
+    public static final boolean positive(final Duration duration) {
+        if ((duration == null) || duration.isNegative() || duration.isZero()) {
             throw new IllegalArgumentException();
         }
         return true;
