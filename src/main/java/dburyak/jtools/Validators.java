@@ -97,10 +97,33 @@ public final class Validators {
      * <br/><b>Created on:</b> <i>5:09:17 AM Aug 22, 2015</i>
      * 
      * @param duration
-     * @return
+     *            time duration to be tested
+     * @return true if duration is positive
+     * @throws IllegalArgumentException
+     *             if duration is zero or negative
      */
     public static final boolean positive(final Duration duration) {
         if ((duration == null) || duration.isNegative() || duration.isZero()) {
+            throw new IllegalArgumentException();
+        }
+        return true;
+    }
+
+    /**
+     * Validate that given integer value is positive (non-zero and non-negative).
+     * <br/><b>PRE-conditions:</b> NONE
+     * <br/><b>POST-conditions:</b> NONE
+     * <br/><b>Side-effects:</b> NONE
+     * <br/><b>Created on:</b> <i>9:56:01 PM Sep 16, 2015</i>
+     * 
+     * @param value
+     *            integer value to be tested
+     * @return true if value is positive
+     * @throws IllegalArgumentException
+     *             if value is zero or negative
+     */
+    public static final boolean positive(final int value) {
+        if (value <= 0) {
             throw new IllegalArgumentException();
         }
         return true;
