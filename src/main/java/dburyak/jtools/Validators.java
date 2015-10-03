@@ -13,7 +13,7 @@ import java.time.Duration;
  * <b>Created on:</b> <i>2:13:08 AM Jul 22, 2015</i>
  *
  * @author <i>Dmytro Buryak &ltdmytro.buryak@gmail.com&gt</i>
- * @version 0.2
+ * @version 0.3
  */
 public final class Validators {
 
@@ -124,6 +124,26 @@ public final class Validators {
      */
     public static final boolean positive(final int value) {
         if (value <= 0) {
+            throw new IllegalArgumentException();
+        }
+        return true;
+    }
+
+    /**
+     * Validate given long value to be non-negative.
+     * <br/><b>PRE-conditions:</b> NONE
+     * <br/><b>POST-conditions:</b> NONE
+     * <br/><b>Side-effects:</b> NONE
+     * <br/><b>Created on:</b> <i>2:42:32 PM Oct 3, 2015</i>
+     * 
+     * @param value
+     *            long value to be tested
+     * @return true if value is non-negative
+     * @throws IllegalArgumentException
+     *             if value is negative
+     */
+    public static final boolean nonNegative(final long value) {
+        if (value < 0) {
             throw new IllegalArgumentException();
         }
         return true;
