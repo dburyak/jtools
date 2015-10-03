@@ -149,4 +149,24 @@ public final class Validators {
         return true;
     }
 
+    /**
+     * Validate given long value to be positive (non-zero and non-negative).
+     * <br/><b>PRE-conditions:</b> NONE
+     * <br/><b>POST-conditions:</b> NONE
+     * <br/><b>Side-effects:</b> NONE
+     * <br/><b>Created on:</b> <i>2:47:53 PM Oct 3, 2015</i>
+     * 
+     * @param value
+     *            long value to be tested
+     * @return true if value is positive
+     * @throws IllegalArgumentException
+     *             if value is zero or negative
+     */
+    public static final boolean positive(final long value) {
+        if (value <= 0) {
+            throw new IllegalArgumentException();
+        }
+        return true;
+    }
+
 }
