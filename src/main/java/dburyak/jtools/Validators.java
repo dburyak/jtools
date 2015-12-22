@@ -169,4 +169,44 @@ public final class Validators {
         return true;
     }
 
+    /**
+     * Validate given boolean value to be true.
+     * <br/><b>PRE-conditions:</b> NONE
+     * <br/><b>POST-conditions:</b> NONE
+     * <br/><b>Side-effects:</b> NONE
+     * <br/><b>Created on:</b> <i>8:02:40 AM Dec 22, 2015</i>
+     * 
+     * @param value
+     *            boolean value to be tested
+     * @return true if value is "true"
+     * @throws IllegalArgumentException
+     *             if value is "false"
+     */
+    public static final boolean isTrue(final boolean value) {
+        if (value == false) {
+            throw new IllegalArgumentException();
+        }
+        return true;
+    }
+
+    /**
+     * Validate given value to be false.
+     * <br/><b>PRE-conditions:</b> NONE
+     * <br/><b>POST-conditions:</b> NONE
+     * <br/><b>Side-effects:</b> NONE
+     * <br/><b>Created on:</b> <i>8:03:40 AM Dec 22, 2015</i>
+     * 
+     * @param value
+     *            boolean value to be tested
+     * @return true if value is "false"
+     * @throws IllegalArgumentException
+     *             if value is "true"
+     */
+    public static final boolean isFalse(final boolean value) {
+        if (value == true) {
+            throw new IllegalArgumentException();
+        }
+        return true;
+    }
+
 }
