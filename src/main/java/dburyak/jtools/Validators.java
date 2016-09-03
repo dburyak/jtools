@@ -209,4 +209,24 @@ public final class Validators {
         return true;
     }
 
+    /**
+     * Validate that given object is null.
+     * <br/><b>PRE-conditions:</b> value is null
+     * <br/><b>POST-conditions:</b> NONE
+     * <br/><b>Side-effects:</b> NONE
+     * <br/><b>Created on:</b> <i>4:56:43 PM Sep 3, 2016</i>
+     * 
+     * @param value
+     *            object to be validated that it is null
+     * @return true if value is null
+     * @throws IllegalArgumentException
+     *             if value is non-null
+     */
+    public static final boolean isNull(final Object value) {
+        if (value == null) {
+            throw new IllegalArgumentException();
+        }
+        return true;
+    }
+
 }
